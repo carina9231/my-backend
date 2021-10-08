@@ -13,7 +13,7 @@ application = Flask(__name__)
 cors = CORS(application, resources={r"/*": {"origins": "*"}})
 
 # mysql
-mysql = MySQL()포
+mysql = MySQL()
 application.config['MYSQL_DATABASE_USER'] = os.environ["MYSQL_DATABASE_USER"]
 application.config['MYSQL_DATABASE_PASSWORD'] = os.environ["MYSQL_DATABASE_PASSWORD"]
 application.config['MYSQL_DATABASE_DB'] = os.environ["MYSQL_DATABASE_DB"]
